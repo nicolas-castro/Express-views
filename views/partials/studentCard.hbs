@@ -1,0 +1,11 @@
+ <h1>List of Students </h1>
+  {{#each allStudents}}
+    {{ this.name }} has been part of this cohort {{ this.class }}
+    {{#if this.favoriteTopic}}
+    and their favorite topic is {{this.favoriteTopic}}. <br>
+    {{else}}
+    they dont have a favorite topic.
+    {{/if}}
+    <br>
+  {{/each}} 
+  <br>
